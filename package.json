@@ -1,0 +1,25 @@
+{
+  "name": "fapshi",
+  "version": "1.0.0",
+  "description": "\"Fapshi payment module\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Warano02/fapshi.git"
+  },
+  "keywords": [
+    "fapshi",
+    "payememnt",
+    "cameroon",
+    "mtn",
+    "orange"
+  ],
+  "author": "Warano (carineteoi@gmail.com +237621092130)",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.8.4"
+  }
+}
