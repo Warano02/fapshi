@@ -9,7 +9,7 @@ module.exports =class FAPSHI {
      * @param {string} key : api key access
      */
     constructor(user, key) {
-        if(!user||key) throw new Error("Mention your user name and api key ");
+        if(!user||!key) throw new Error("Mention your user name and api key ");
         
         this.apiuser = user;
         this.key = key;
