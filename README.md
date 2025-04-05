@@ -80,10 +80,10 @@ Parameters:
 
 transId: The transaction ID.
 
-``js
+````js
 const statusResponse = await fapshi.paymentStatus("transaction_id");
 
-``
+````
 
 ### 4. expirePay(transId)
 
@@ -105,17 +105,17 @@ Parameters:
 
 userId: The user's ID.
 
-``js
+````js
 const transactions = await fapshi.userTrans("user123");
-``
+````
 
 ### 6. balance()
 
 Retrieves the service balance.
 
-``js
+````js
 const balanceResponse = await fapshi.balance();
-``
+````
 
 ### 7. payout(data)
 
@@ -125,7 +125,7 @@ Parameters:
 
 data: An object containing payout information.
 
-``js
+````js
 const payoutData = {
     amount: 1000,
     phone: "61234567",
@@ -138,7 +138,7 @@ const payoutData = {
 };
 const payoutResponse = await fapshi.payout(payoutData);
 
-``
+````
 
 ### 8. search(params)
 
@@ -148,7 +148,7 @@ Parameters:
 
 params: An object containing search criteria such as status, medium, start, end, amt, limit, and sort
 
-``js
+````js
 const searchParams = {
     status: "successful",
     medium: "mobile money",
@@ -159,4 +159,4 @@ const searchParams = {
     sort: "asc"
 };
 const searchResults = await fapshi.search(searchParams);
-``
+````
