@@ -37,7 +37,6 @@ module.exports = class FAPSHI {
         const self = this;
         return new Promise(async function (resolve) {
             try {
-                console.log("headers :" + JSON.stringify(self.headers));
                 if (!data?.amount) return resolve(error("amount required", 400));
                 if (!Number.isInteger(data.amount))
                     return resolve(error("amount must be of type integer", 400));
